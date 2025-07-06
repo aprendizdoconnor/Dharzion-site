@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Site oficial do canal Dharzion com seus simuladores de Roblox favoritos e muito mais."/>
+  <title>Dharzion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="icon" href="favicon.ico"/>
+
+</head>
+<body>
+
+  <section id="home" class="banner" data-aos="fade-down">
+    <img src="images/logos/Dharzion logo.png" alt="Logo Dharzion" class="logo-banner">
+    <h1 id="typewriter-text"></h1>
+    <p>Esse site foi criado com o objetivo de engajar o canal</p>
+    <p>Seus Simulators de Roblox favoritos em um só lugar</p>
+    <a href="#simulators" class="btn" data-aos="zoom-in">
+      Ver Simulators <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <section id="contato" class="contato" data-aos="fade-down">
+    <div class="contato-logo-texto">
+      <img src="images/logos/Dharzion avatar.png" alt="Logo Dharzion" class="logo-contato">
+      <div>
+    <h2>Contato</h2>
+    <p>Quer falar com a gente? Envie uma mensagem ou use as redes socias:</p>
+    <p>Discord do Dharzion: <a href="https://discord.gg/zwjxrDUp87" target="_blank" rel="noopener noreferrer" style="color:#dda0dd;">🟣 Jokers</a></p>
+  </div>
+ </div>
+  </section>
+
+  <section id="simulators" class="simulators-list" data-aos="fade-down">
+   <div class=" vitrine card" data-aos="fade-up">
+    <a href="simulators/digmon.html" rel="noopener noreferrer">
+     <img src="images/noFilter.png" alt="Digmon Tower defense" width="200" loading="lazy"/>
+     <h3>Digmon Tower Defense</h3>
+    </a>
+   </div>
+
+   <div class="vitrine card" data-aos="fade-up">
+    <a href="https://www.youtube.com/watch?v=dhxvZUlQ9Rk" target="_blank" rel="noopener noreferrer">
+     <img src="images/imagem.png" alt="Anime Kingdom Simulator" width="200" loading="lazy"/>
+     <h3>Anime Fantasy Kingdom</h3>
+    </a>
+   </div>
+
+   <div class=" vitrine card" data-aos="fade-up">
+    <a href="https://www.youtube.com/watch?v=KVdejBZ80xQ" target="_blank" rel="noopener noreferrer">
+     <img src="images/imagem2.png" alt="Anime Run Kingdom" width="300" loading="lazy"/>
+     <h3>Anime Run Kingdom</h3>
+    </a>
+   </div>
+
+   <div class=" vitrine card" data-aos="fade-up">
+    <a href="https://www.youtube.com/watch?v=lovujhIOPAU&t=1475s" target="_blank" rel="noopener noreferrer">
+     <img src="images/imagem3.png" alt="Anime Fantasy Kingdom" width="180" loading="lazy"/>
+     <h3>Anime Fantasy Kingdom</h3>
+    </a>
+   </div>
+
+   <div class="vitrine card" data-aos="fade-up">
+    <a href="https://www.youtube.com/watch?v=roQYycVXYFQ" target="_blank" rel="noopener noreferrer">
+     <img src="images/imagem4.png" alt="Anime Fruit Reborn" width="180" loading="lazy"/>
+     <h3>Anime Fruit Reborn</h3>
+    </a>
+   </div>
+
+   <div class="vitrine card" data-aos="fade-up">
+    <a href="https://www.youtube.com/watch?v=B-LVfdE0T34" target="_blank" rel="noopener noreferrer">
+     <img src="images/imagem5.png" alt="Arise Evolution" width="270" loading="lazy"/>
+     <h3>Arise Evolution</h3>
+  </a>
+  </div>
+  </section>
+
+  <footer>
+   <div class="footer-content">
+    <p>&copy; 2025 - Site do canal Dharzion. Todos os direitos reservados</p>
+    <div class="footer-social-icons">
+      <a href="https://discord.gg/zwjxrDUp87" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      <a href="https://www.youtube.com/@Dharzion" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+
+  <div class="bottom-bar">
+    <a href="#home"><i class="fas fa-home"></i></a>
+    <a href="#simulators"><i class="fas fa-gamepad"></i></a>
+    <a href="#contato"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <button id="paraoInicio" aria-label="Voltar ao topo">⬆️</button>
+  <script src="scripts.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function(){
+      console.log('particles.js loaded!');
+    });
+  </script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilti/1.7.0/vanilla-tilt.min.js"></script>
+ <script>
+   VanillaTilt.init(document.querySelectorAll(".card"),{
+    max: 15,
+    speed: 400
+   });
+ </script>
+
+</body>
+</html>
