@@ -81,7 +81,10 @@ footer {
 }
 
 .footer-social-icons {
-  margin-top: 15px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+  top: -1px;
 }
 
 .footer-social-icons a {
@@ -95,9 +98,15 @@ footer {
   color: white;
 }
 
-.social-icons a i {
+.footer-social-icons i {
+  font-size: 26px;
+  transition: tranform 0.3s ease;
   margin-right: 8px;
   vertical-align: middle;
+}
+
+.footer-social-icons i:hover {
+  transform: scale(1.2);
 }
 
 .simulators-list {
@@ -162,7 +171,7 @@ footer {
   color: white;
 }
 
-.contato {
+.parcerias {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
@@ -172,18 +181,40 @@ footer {
   color: white;
 }
 
-.contato-logo-texto {
+.parcerias-logo {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
 }
 
-.contato-logo-texto img {
-  max-width: 100px;
+
+.parceria-bloco {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.convite-label {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+}
+
+
+.parcerias-logo img {
+  width: 100px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+
+.parcerias-logo img:hover {
+  transform: scale(1.05);
 }
 
 #particles-js {
@@ -229,32 +260,6 @@ footer {
   animation: brilho 2s infinite alternate;
 }
 
-#paraoInicio {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  outline: none;
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  z-index: 1000;
-  padding: 0;
-  user-select: none;
-  transition: color 0.3s ease;
-  border-radius: 0;
-}
-
-#paraoInicio:focus,
-#paraoInicio:active {
-  outline: none;
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
 
 .discord-float {
   position: fixed;
@@ -276,6 +281,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 
 .discord-float:hover {
   transform: scale(1.1);
@@ -436,3 +442,55 @@ footer {
   }
 }
 
+
+.footer-contact-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.avatar-dharzion {
+  position: fixed;
+  bottom: 80px;
+  right: 1px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+
+.avatar-dharzion img {
+  width: 135px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3s);
+}
+
+
+.avatar-dharzion img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #dda0dd;
+}
+
+
+.footer-contact-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.footer-contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}

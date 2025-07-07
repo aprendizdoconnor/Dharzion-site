@@ -1,24 +1,3 @@
-const botaoInicio = document.getElementById("paraoInicio");
-
-function toggleBotao() {
-    if (window.scrollY > 300) {
-        botaoInicio.style.display = "block";
-     } else {
-        botaoInicio.style.display = "none";
-    }
-}
-
-window.addEventListener('load', toggleBotao);
-
-window.addEventListener("scroll", toggleBotao);
-
-botaoInicio.addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
 const texto = " Bem-vindo ao site do canal<br>Dharzion";
 const element = document.getElementById("typewriter-text");
 
