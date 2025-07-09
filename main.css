@@ -8,7 +8,8 @@ body {
   padding: 0;
   background: linear-gradient( to right, #1a1a1a, #2e2e2e);
   color: white;
-  font-family: 'Roboto', Arial, sans-serif
+  font-family: 'Roboto', Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -315,7 +316,7 @@ footer {
 
 @-webkit-keyframes typing {
   from { width: 0; }
-  to { width: 100%};
+  to { width: 100%}
 }
 
 @keyframes typing {
@@ -361,10 +362,12 @@ footer {
   background: #1a1a1a;
   border-top: 1px solid #9932cc;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 5px 0;
+  padding: 10px;
+  gap: 20px;
   z-index: 999;
+  font-size: clamp(16px, 3vw, 24px);
 }
 
 .bottom-bar a {
@@ -443,17 +446,6 @@ footer {
 }
 
 
-.footer-contact-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-
 .avatar-dharzion {
   position: fixed;
   bottom: 80px;
@@ -465,6 +457,7 @@ footer {
 
 .avatar-dharzion img {
   width: 135px;
+  max-width: 100%;
   height: auto;
   border-radius: 50%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -493,4 +486,15 @@ footer {
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+
+@media (max-width: 480px) {
+  .avatar-dharzion {
+    bottom: 70px;
+    right: 5px;
+  }
+  .avatar-dharzion img {
+    width: 90px;
+  }
 }
