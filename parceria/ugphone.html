@@ -34,6 +34,22 @@
       display: inline-block;
       margin-top: 15px;
     }
+
+.voltar .btn {
+  background: linear-gradient(90deg, #7b1fa2, #9c27b0);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.voltar .btn:hover {
+  background: linear-gradient(90deg, #9c27b0, #7b1fa2);
+}
   </style>
 </head>
 <body>
@@ -61,11 +77,24 @@
     </a>
    </div>
 
-
-     <br><br>
-  <a class="btn" href="../index.html">
+   <br><br>
+   <div class="voltar" style="text-align: center; margin-top: 20px;">
+  <a href="#" class="btn" onclick="fecharOuVoltar(); return false;">
     ← Voltar para o site
   </a>
+</div>
+
+<script>
+  function fecharOuVoltar() {
+    window.close();
+
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 300);
+  }
+</script>
+
+
   </section>
 
 </body>
