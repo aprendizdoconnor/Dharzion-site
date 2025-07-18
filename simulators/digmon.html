@@ -8,24 +8,42 @@
     <link rel="stylesheet" href="digmon.css"/>
 </head>
 <body>
-    <h1 class="titulo">Digmon Tower Defense - Todos os Videos</h1>
 
-    <div class="video-container">
-        <a href="https://www.youtube.com/watch?v=XlhkHIXGnyA" target="_blank" class="video-card">
-            <h2>Episódio 1</h2>
-        </a>
+ <div class="banner-topo"></div>
 
-        <a href="https://www.youtube.com/watch?v=vVmfT5IqF1s" target="_blank" class="video-card">
-            <h2>Episódio 2</h2>
-        </a>
-        
-        <a href="https://www.youtube.com/watch?v=0khKsA6yfLI" target="_blank" class="video-card">
-            <h2>Episódio 3</h2>
-        </a>
-    </div>
 
-   <div class="voltar">
-    <a href="../index.html" onclick="window.open(this.href, '_self'); window.close(); return false;">Voltar ao incio </a>
-   </div>
+  <div class="video-grid">
+  <div class="video-item">
+    <iframe src="https://www.youtube.com/embed/XlhkHIXGnyA" allowfullscreen></iframe>
+    <h3><p class="legenda"></p>VOCÊ PRECISA JOGAR ESSE DIGITOWER DEFENSE ! NOVO JOGO DIGIMON NO ROBLOX INSANO!</h3>
+  </div>
+  <div class="video-item">
+    <iframe src="https://www.youtube.com/embed/vVmfT5IqF1s" allowfullscreen></iframe>
+    <h3><p class="legenda"></p>COMO DESBLOQUEAR O NOVO DIGIMON FUSION SECRET! PORTAL RAID DESERT DIGITOWER ⚔️</h3>
+  </div>
+  <div class="video-item">
+    <iframe src="https://www.youtube.com/embed/0khKsA6yfLI" allowfullscreen></iframe>
+    <h3><p class="legenda"></p>DIGIMONS SHINY SS/SSS + NOVO SISTEMA DE PITY UPDATE COMPLETO! ⚔️</h3>
+  </div>
+</div>
+
+   <div class="voltar" style="text-align: center; margin-top: 20px;">
+  <a href="#" class="btn" onclick="fecharOuVoltar(); return false;">
+    ← Voltar para o site
+  </a>
+</div>
+
+<script>
+  function fecharOuVoltar() {
+    window.close();
+
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 300);
+  }
+</script>
+
+
+
 </body>
 </html>
