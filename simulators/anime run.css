@@ -1,67 +1,83 @@
 body {
-    background: linear-gradient(to right, #1a1a1a, #2e2e2e);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 20px;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
-.titulo {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #dda0dd;
+.banner-topo {
+   position: relative; 
+   width: 100%;
+   height: 1200px;
+   background-image: url('../images/imagem2.png');
+   background-size: cover;
+   background-position: center;
+   z-index: 1; 
+}
+   
+
+.banner-topo::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 2; 
+    pointer-events: none; 
 }
 
-.video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+.conteudo {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    background-color: #000;
 }
 
-.video-card {
-    background-color: #2a1a2a;
-    border: 2px solid #dda0dd;
-    border-radius: 8px;
-    padding: 6px 10px;
-    width: 160px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 15px #dda0dd55;
-    font-size: 14px;
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: -80px auto 0 auto; 
+    position: relative;
+    z-index: 3;
 }
 
-.video-card h2 {
-    font-size: 16px;
-    margin: 6px 0;
+.video-grid iframe {
+     width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-.video-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px #dda0dd;
-    background-color: #3a2a3a;
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.video-card p {
-    font-size: 14px;
-    color: #ccc;
+.legenda {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
 }
 
-.voltar {
-    margin-top: 40px;
-    text-align: center;
+.voltar .btn {
+  background: linear-gradient(90deg, #7b1fa2, #9c27b0);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-.voltar a{
-    color: #dda0dd;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.voltar a:hover {
-    text-decoration: underline;
-    color: white;
+.voltar .btn:hover {
+  background: linear-gradient(90deg, #9c27b0, #7b1fa2);
 }

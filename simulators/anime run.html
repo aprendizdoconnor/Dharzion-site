@@ -8,28 +8,44 @@
     <link rel="stylesheet" href="anime run.css"/>
 </head>
 <body>
-    <h1 class="titulo">Anime Run Kingdom - Todos os Videos</h1>
+    <div class="banner-topo"></div>
 
-    <div class="video-container">
-        <a href="https://www.youtube.com/watch?v=KVdejBZ80xQ&t=5s" target="_blank" class="video-card">
-            <h2>Episódio 1</h2>
-        </a>
 
-        <a href="https://www.youtube.com/watch?v=n0VfMccyavY&t=48s" target="_blank" class="video-card">
-            <h2>Episódio 2</h2>
-        </a>
-        
-        <a href="https://www.youtube.com/watch?v=PIXvx7KmccY&t=223s" target="_blank" class="video-card">
-            <h2>Episódio 3</h2>
-        </a>
-
-        <a href="https://www.youtube.com/watch?v=wfnBmlKNmHo&t=7s" target="_blank" class="video-card">
-            <h2>Episódio 4</h2>
-        </a>
-    </div>
-
-   <div class="voltar">
-    <a href="../index.html" onclick="window.open(this.href, '_self'); window.close(); return false;">Voltar ao incio </a>
+  <div class="video-grid">
+   <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KVdejBZ80xQ?si=hvcxTNbqDK4JxkUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3><p class="legenda"></p>ANIME RUN KINGDOM CONHEÇA NOVO JOGO ROBLOX + TUTORIAL PARA INICIANTE 🚨</h3>
    </div>
+   <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/n0VfMccyavY?si=wWLlJngsyer-Q4iL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3><p class="legenda"></p>TIER LIST MELHORES EQUIPES INICIANTES NO ANIME RUN PASSO A PASSO | NOOB AO PRO 🚨 </h3>
+  </div>
+  <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PIXvx7KmccY?si=-w9d0iP5iGlV0cay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3><p class="legenda"></p>BUFFS PODEROSOS E NOVAS UNIDADES CHEGANDO! BALANCEAMENTO NO ANIME RUN 🚨</h3>
+  </div>
+
+  <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wfnBmlKNmHo?si=ezkU1jaYqYLLs93A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3><p class="legenda"></p>COMO SOLAR EVENTO CID FÁCIL! MELHOR FORMAÇÃO E METODO AUTO AFK 24H ANIME RUN KINGDOM 🚨</h3>
+  </div>
+  </div>
+
+   <div class="voltar" style="text-align: center; margin-top: 20px;">
+  <a href="#" class="btn" onclick="fecharOuVoltar(); return false;">
+    ← Voltar para o site
+  </a>
+</div>
+
+<script>
+  function fecharOuVoltar() {
+    window.close();
+
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 300);
+  }
+</script>
+
 </body>
 </html>
